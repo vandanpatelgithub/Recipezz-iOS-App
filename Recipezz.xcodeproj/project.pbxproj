@@ -16,6 +16,7 @@
 		628731B31D5974F600FC21CD /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731B11D5974F600FC21CD /* Recipe+CoreDataProperties.swift */; };
 		628731B41D5974F600FC21CD /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731B21D5974F600FC21CD /* Recipe.swift */; };
 		628731B61D597AF800FC21CD /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731B51D597AF800FC21CD /* RecipeCell.swift */; };
+		628731B81D59958C00FC21CD /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628731B71D59958C00FC21CD /* CreateRecipeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		628731B11D5974F600FC21CD /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		628731B21D5974F600FC21CD /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 		628731B51D597AF800FC21CD /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		628731B71D59958C00FC21CD /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				6287319B1D59637B00FC21CD /* ViewController.swift */,
+				628731B71D59958C00FC21CD /* CreateRecipeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				628731B31D5974F600FC21CD /* Recipe+CoreDataProperties.swift in Sources */,
 				6287319C1D59637B00FC21CD /* ViewController.swift in Sources */,
 				628731B61D597AF800FC21CD /* RecipeCell.swift in Sources */,
+				628731B81D59958C00FC21CD /* CreateRecipeVC.swift in Sources */,
 				6287319A1D59637B00FC21CD /* AppDelegate.swift in Sources */,
 				628731B41D5974F600FC21CD /* Recipe.swift in Sources */,
 			);

@@ -1,5 +1,6 @@
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -11,6 +12,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        fetchAndSetResults()
+        tableView.reloadData()
+    }
+    
+    func fetchAndSetResults() {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName: "Recipe")
+        
+        do {
+            let results = try context.executeFetchRequest(fetchRequest)
+            self.recipes = results as! [Recipe]
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
